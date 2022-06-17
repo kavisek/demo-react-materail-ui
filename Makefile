@@ -1,3 +1,3 @@
 # NPM Commands
-create_app:
-	npm init react-app app
+create_frontend:
+	npm init react-app frontend
