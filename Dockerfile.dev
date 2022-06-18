@@ -4,9 +4,10 @@ FROM node:14
 WORKDIR /root
 COPY . /root
 
-RUN npm install
+WORKDIR /root/frontend
 
+RUN yarn install
 
 # Commont docker ports.
 EXPOSE 3000 8000 80
-# CMD ["npm", "start"]
+CMD ["yarn", "start"]
